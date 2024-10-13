@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
     <title>TitipMudah</title>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
 
 <body>
     <!-- Header -->
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50">
-            <nav class="flex items-center justify-between p-6 lg:px-8 fixed top-0 left-0 w-full bg-white bg-opacity-70 backdrop-blur-md z-50" aria-label="Global">
+            <nav class="flex items-center justify-between p-6 lg:px-8 fixed top-0 left-0 w-full bg-white bg-opacity-70 backdrop-blur-md z-50 shadow-lg" aria-label="Global">
                 <div class="flex lg:flex-1 text-2xl font-bold">
                     <a href="#">
                         <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span>
@@ -33,10 +35,10 @@
                     <a href="#contact" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300"> <span aria-hidden="true"></span></a>
+                    <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300"><span aria-hidden="true"></span></a>
                 </div>
             </nav>
-
+            
             <!-- Mobile menu, show/hide based on menu open state. -->
             <div class="lg:hidden hidden" id="mobile-menu">
                 <div class="fixed inset-0 z-50 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" style="height: 50vh;">
@@ -72,23 +74,16 @@
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
-            <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
-                <div class="flex flex-col lg:flex-row items-center">
-                    <!-- Teks di sebelah kiri -->
-                    <div class="lg:w-1/2 text-center lg:text-left">
-                        <h1 class="text-5xl font-bold">
-                            <span class="text-black">Welcome to <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span></span>
-                        </h1>
-                        <p class="mt-6 text-2xl leading-8 text-gray-600">Layanan Jasa Titip Termurah dan Terpercaya se-Indonesia</p>
-                        <div class="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
-                            <a href="https://wa.me/+6283109616626" target="_blank" rel="noopener noreferrer">
-                                <button class="mt-6 bg-[#fd381d] text-white text-xl font-bold px-6 py-3 rounded-lg hover:bg-red-600" data-aos="zoom-in" data-aos-delay="500">Pesan Sekarang</button>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Gambar di sebelah kanan -->
-                    <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
-                        <img src="img/logopng.png" alt="Your image description" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl rounded-lg object-contain">
+            <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56 flex items-center justify-center">
+                <div class="flex flex-col items-center text-center lg:w-full lg:text-center">
+                    <h1 class="text-5xl font-bold">
+                        <span class="text-black">Welcome to <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span></span>
+                    </h1>
+                    <p class="mt-6 text-2xl leading-8 text-gray-600">Layanan Jasa Titip Termurah dan Terpercaya se-Indonesia</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href="https://wa.me/+6285729060090" target="_blank" rel="noopener noreferrer">
+                            <button class="mt-6 bg-[#fd381d] text-white text-xl font-bold px-6 py-3 rounded-lg hover:bg-red-600" data-aos="zoom-in" data-aos-delay="500">Pesan Sekarang</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -200,11 +195,10 @@
         <h2 class="text-3xl font-bold" data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
 
         <div class="container mx-auto flex flex-col md:flex-row items-start justify-between mt-10">
-            <!-- Google Map -->
             <div class="w-full md:w-1/2 p-4" data-aos="fade-right" data-aos-duration="1000">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.258930278402!2d106.82865470265147!3d-6.228240368530915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3fd8ef61ebf%3A0xfb8d7ad04a50dd12!2s59RF%2BG7M!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <img src="img/logopng.png" alt="Logo" class="max-w-xs mx-auto">
             </div>
+            
 
             <!-- Contact Form -->
             <div class="w-full md:w-1/2 p-4" data-aos="fade-left" data-aos-duration="1000">
@@ -247,7 +241,7 @@
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pangesturama158@gmail.com" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Instagram">
                             <img src="img/gmail.png" alt="Instagram Logo" class="w-6 h-6">
                         </a>
-                        <a href="https://wa.me/+6283109616626" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Twitter">
+                        <a href="https://wa.me/+6285729060090" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Twitter">
                             <img src="img/wa.png" alt="Twitter Logo" class="w-6 h-6">
                         </a>
                     </div>
@@ -257,10 +251,10 @@
                 <div>
                     <h5 class="text-lg font-semibold text-gray-800">Menu</h5>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Services</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#fd381d]">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#fd381d]">Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#fd381d]">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#fd381d]">Contact</a></li>
                     </ul>
                 </div>
 
@@ -269,7 +263,7 @@
                     <h5 class="text-lg font-semibold text-gray-800">Hubungi Kami</h5>
                     <ul class="mt-4 space-y-2">
                         <li class="text-gray-600 hover:text-gray-800">Keparakan Lor, Mergangan, Yogyakarta</li>
-                        <li class="text-gray-600 hover:text-gray-800">+6283109616626</li>
+                        <li class="text-gray-600 hover:text-gray-800">+6285729060090</li>
                         <li><a href="mailto:pangesturama158@gmail.com" class="text-gray-600 hover:text-gray-800">pangesturama158@gmail.com</a></li>
                         <li><a href="https://www.instagram.com/rmaapg" class="text-gray-600 hover:text-gray-800">@rmaapg</a></li>
                     </ul>
@@ -283,8 +277,10 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Inisialisasi AOS
+    </script>
 </body>
-
-</html>
 
 </html>
