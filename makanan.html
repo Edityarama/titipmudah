@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <title>Daftar Makanan</title>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav class="flex items-center justify-between p-6 lg:px-8 fixed top-0 left-0 w-full bg-white bg-opacity-70 backdrop-blur-md z-50 shadow-lg" aria-label="Global">
+                <div class="flex lg:flex-1 text-2xl font-bold">
+                    <a href="#">
+                        <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span>
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="menu-toggle">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
+                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Services</a>
+                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">About</a>
+                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300"><span aria-hidden="true"></span></a>
+                </div>
+            </nav>
+
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="fixed inset-0 z-50 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" style="height: 32vh;">
+                    <div class="flex items-center justify-between">
+                        <div class="flex lg:flex-1 text-2xl font-bold">
+                            <a href="#">
+                                <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span>
+                            </a>
+                        </div>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="menu-close">
+                            <span class="sr-only">Tutup menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Home</a>
+                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Services</a>
+                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">About</a>
+                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bg -->
+        <div class="relative isolate px-6 pt-14 lg:px-8" data-aos="fade-up" data-aos-duration="1000">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56 flex items-center justify-center">
+                <div class="flex flex-col items-center text-center lg:w-full lg:text-center">
+                    <h1 class="text-5xl font-bold">
+                        <span class="text-black"><span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span></span>
+                    </h1>
+                    <p class="mt-6 text-2xl leading-8 text-gray-600">Layanan Jasa Titip Termurah dan Terpercaya se-Indonesia</p>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+        </div>
+
+        <!-- Daftar Barang -->
+        <section id="services" class="py-10 bg-white pt-10 ">
+            <div class="container mx-auto text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">Daftar Makanan</h2>
+                <p class="mt-4 text-gray-600">Berikut makanan yang tersedia</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                <!-- Service 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/geprek.webp" alt="Access Solutions" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Ayam Geprek</h3>
+                        <p class="text-gray-600 mt-2">Rp 13.000</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/gacoan.jpg" alt="Alarm Systems" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Mie Gacoan</h3>
+                        <p class="text-gray-600 mt-2">Rp 14.000</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/hotways.jpg" alt="Buzzers" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Hotways Nashville Chicken</h3>
+                        <p class="text-gray-600 mt-2">Rp 28.000</p>
+                    </div>
+                </div>
+
+                <!-- Service 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/rockbur.webp" alt="Access Solutions" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">The Rock Burger Nashville Chicken</h3>
+                        <p class="text-gray-600 mt-2">Rp 28.000</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/seblak.jpg" alt="Alarm Systems" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Seblak</h3>
+                        <p class="text-gray-600 mt-2">Rp 17.000</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/peko.jpg" alt="Buzzers" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Takoyaki Pekoo Pekoo</h3>
+                        <p class="text-gray-600 mt-2">Rp 13.000 - Rp 33.000</p>
+                    </div>
+                </div>         
+            </div>
+        </section>
+
+        <footer class="bg-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Logo and tagline -->
+                    <div class="text-center md:text-left">
+                        <div class="text-3xl font-bold text-purple-600">
+                            <span class="text-[#0d2546]">Titip</span><span class="text-[#fd381d]">Mudah</span>
+                        </div>
+                        <p class="mt-2 text-gray-600">Hubungi Kami Melalui Sosial Media Kami</p>
+                        <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                            <a href="https://www.instagram.com/rmaapg" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Facebook">
+                                <img src="img/ig.webp" alt="IG" class="w-6 h-6">
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pangesturama158@gmail.com" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Instagram">
+                                <img src="img/gmail.png" alt="Instagram Logo" class="w-6 h-6">
+                            </a>
+                            <a href="https://wa.me/+6285729060090" target="_blank" class="text-gray-500 hover:text-gray-700" aria-label="Twitter">
+                                <img src="img/wa.png" alt="Twitter Logo" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Menu -->
+                    <div>
+                        <h5 class="text-lg font-semibold text-gray-800">Menu</h5>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-[#fd381d]">Home</a></li>
+                            <li><a href="#services" class="text-gray-600 hover:text-[#fd381d]">Services</a></li>
+                            <li><a href="#about" class="text-gray-600 hover:text-[#fd381d]">About</a></li>
+                            <li><a href="#contact" class="text-gray-600 hover:text-[#fd381d]">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Contact -->
+                    <div>
+                        <h5 class="text-lg font-semibold text-gray-800">Hubungi Kami</h5>
+                        <ul class="mt-4 space-y-2">
+                            <li class="text-gray-600 hover:text-gray-800">Keparakan Lor, Mergangan, Yogyakarta</li>
+                            <li class="text-gray-600 hover:text-gray-800">+6285729060090</li>
+                            <li><a href="mailto:pangesturama158@gmail.com" class="text-gray-600 hover:text-gray-800">pangesturama158@gmail.com</a></li>
+                            <li><a href="https://www.instagram.com/rmaapg" class="text-gray-600 hover:text-gray-800">@rmaapg</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-black text-xs md:text-sm font-bold border-t border-black pt-4">
+                <p>&copy; 2024 TitipMudah. Powered by Layanan TitipMudah.</p>
+            </div>
+        </footer>
+    </div>    
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Inisialisasi AOS
+    </script>
+</body>
+</html>
