@@ -8,6 +8,7 @@
     <title>TitipMudah</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="icon" href="img/logopng.png" type="img">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -192,40 +193,59 @@
         </div>
     </section>
 
-    <!-- contact -->
-    <section id="contact" class="text-center py-10">
-        <h2 class="text-3xl font-bold" data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
-
-        <div class="container mx-auto flex flex-col md:flex-row items-start justify-between mt-10">
-            <div class="w-full md:w-1/2 p-4" data-aos="fade-right" data-aos-duration="1000">
-                <img src="img/logopng.png" alt="Logo" class="max-w-xs mx-auto">
-            </div>
-            
-
-            <!-- Contact Form -->
-            <div class="w-full md:w-1/2 p-4" data-aos="fade-left" data-aos-duration="1000">
-                <form id="whatsappForm">
-                    <div class="mb-4">
-                        <label for="name" class="block text-left">Nama</label>
-                        <input type="text" id="name" name="name" placeholder="Nama lengkap" class="w-full p-2 border rounded-md" required>
+    <!-- faqs -->
+    <section id="faqs" class="py-10 bg-white">
+        <h2 class="text-3xl font-bold text-gray-800 text-center" data-aos="fade-up" data-aos-duration="1000">FAQS</h2>
+        <div class="mt-6 px-4">
+            <div class="space-y-4 max-w-3xl mx-auto lg:max-w-5xl"> <!-- Tambahkan lg:max-w-5xl untuk tampilan desktop -->
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-white p-6 rounded-lg border border-gray-200 shadow-lg transform hover:scale-105 transition-transform duration-300 lg:border-2" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="faq-question w-full text-left font-semibold text-lg text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Apa itu titip mudah?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600">
+                        Titip mudah adalah layanan jasa titip baik luar negeri maupun dalam negeri dengan harga yang murah namun kualitas terjamin.
+                        </p>
                     </div>
-                    <div class="mb-4">
-                        <label for="phone" class="block text-left">No Handphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Nomor handphone" class="w-full p-2 border rounded-md" required>
+                </div>
+        
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-white p-6 rounded-lg border border-gray-200 shadow-lg transform hover:scale-105 transition-transform duration-300 lg:border-2" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="faq-question w-full text-left font-semibold text-lg text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Bagaimana cara menggunakan layanan titip mudah?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600">
+                        Anda bisa memilih layanan jastip barang, makanan, ataupun minuman. Lalu pilih kenis makanan aau barang yang anda inginkan. Lalu isi form di bagian bawah.
+                        </p>
                     </div>
-                    <div class="mb-4">
-                        <label for="address" class="block text-left">Alamat</label>
-                        <input type="text" id="address" name="address" placeholder="Alamat anda" class="w-full p-2 border rounded-md" required>
+                </div>
+        
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-white p-6 rounded-lg border border-gray-200 shadow-lg transform hover:scale-105 transition-transform duration-300 lg:border-2" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="faq-question w-full text-left font-semibold text-lg text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Berapa lama waktu yang diperlukan agar barang impor bisa sampai ke kosumen?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600">
+                        Lama waktu pengiriman tegantung dari negara asal barang pesanan Anda. Info lebih lanjut bisa hubungi kami melalui whatsapp atau instagram.
+                        </p>
                     </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-left">Pesanan</label>
-                        <textarea id="message" name="message" placeholder="Kirim detail pesanan anda disini.." class="w-full p-2 border rounded-md" required></textarea>
-                    </div>
-                    <button type="submit" class="bg-[#fd381d] text-white px-6 py-3 rounded-md hover:bg-red-600">KIRIM PESAN</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- footer -->
     <footer class="bg-white py-12">
@@ -313,6 +333,25 @@
         // Buka URL di tab baru dengan pesan otomatis diisi
         window.open(whatsappURL, '_blank');
     });
+    </script>
+
+    <script>
+        // JavaScript untuk mengatur animasi FAQ
+        document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqContent = button.nextElementSibling;
+            const svgIcon = button.querySelector('svg');
+
+            // Toggle max-h untuk smooth transition tinggi konten
+            if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null;
+            svgIcon.classList.remove('rotate-180');
+            } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + 'px';
+            svgIcon.classList.add('rotate-180');
+            }
+        });
+        });
     </script>
 
 </body>
