@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Daftar Makanan</title>
 </head>
+
 <body class="bg-gray-100">
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50">
@@ -25,10 +27,9 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Services</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">About</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
+                    <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
+                    <a href="#services" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Product</a>
+                    <a href="#contact" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300"><span aria-hidden="true"></span></a>
@@ -98,7 +99,7 @@
                         <p class="text-gray-600 mt-2">Rp 13.000</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/gacoan.jpg" alt="Alarm Systems" class="w-full h-64 object-cover">
@@ -107,7 +108,7 @@
                         <p class="text-gray-600 mt-2">Rp 14.000</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 3 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
                     <img src="img/hotways.jpg" alt="Buzzers" class="w-full h-64 object-cover">
@@ -121,11 +122,11 @@
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/rockbur.webp" alt="Access Solutions" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800">The Rock Burger Nashville Chicken</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Rock Burger Nashville Chicken</h3>
                         <p class="text-gray-600 mt-2">Rp 28.000</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/seblak.jpg" alt="Alarm Systems" class="w-full h-64 object-cover">
@@ -134,7 +135,7 @@
                         <p class="text-gray-600 mt-2">Rp 17.000</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 3 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
                     <img src="img/peko.jpg" alt="Buzzers" class="w-full h-64 object-cover">
@@ -142,7 +143,7 @@
                         <h3 class="text-xl font-bold text-gray-800">Takoyaki Pekoo Pekoo</h3>
                         <p class="text-gray-600 mt-2">Rp 13.000 - Rp 33.000</p>
                     </div>
-                </div>         
+                </div>
             </div>
         </section>
 
@@ -153,7 +154,7 @@
                 <div class="w-full md:w-1/2 p-4" data-aos="fade-right" data-aos-duration="1000">
                     <img src="img/logopng.png" alt="Logo" class="max-w-xs mx-auto">
                 </div>
-                
+
 
                 <!-- Contact Form -->
                 <div class="w-full md:w-1/2 p-4" data-aos="fade-left" data-aos-duration="1000">
@@ -171,10 +172,22 @@
                             <input type="text" id="address" name="address" placeholder="Alamat anda" class="w-full p-2 border rounded-md" required>
                         </div>
                         <div class="mb-4">
-                            <label for="message" class="block text-left">Nama Makanan</label>
-                            <textarea id="message" name="message" placeholder="Kirim detail pesanan anda disini.." class="w-full p-2 border rounded-md" required></textarea>
+                            <label for="product" class="block text-left mb-2">Nama Makanan</label>
+                            <select id="product" name="product" class="w-full p-2 border border-gray-300 rounded-md" required>
+                                <option value="">Pilih makanan...</option>
+                                <option value="ayam_geprek">Ayam Geprek</option>
+                                <option value="mie_gacoan">Mie Gacoan</option>
+                                <option value="hotways_nashville">Hotways Nashville</option>
+                                <option value="rock_burger">Rock Burger Nashville Chicken</option>
+                                <option value="seblak">Seblak</option>
+                                <option value="takoyaki">Takoyaki Pekoo Pekoo</option>
+                            </select>
                         </div>
-                        <button type="submit" class="bg-[#fd381d] text-white px-6 py-3 rounded-md hover:bg-red-600">KIRIM PESAN</button>
+                        <div class="mb-4">
+                            <label for="quantity" class="block text-left">Jumlah Pesanan</label>
+                            <input type="number" id="quantity" name="quantity" placeholder="Jumlah pesanan" class="w-full p-2 border rounded-md" min="1" required>
+                        </div>
+                        <button type="submit" id="sendMessage" class="bg-[#fd381d] text-white px-6 py-3 rounded-md hover:bg-red-600">KIRIM PESAN</button>
                     </form>
                 </div>
             </div>
@@ -202,7 +215,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <!-- Menu -->
                     <div>
                         <h5 class="text-lg font-semibold text-gray-800">Menu</h5>
@@ -213,7 +226,7 @@
                             <li><a href="#contact" class="text-gray-600 hover:text-[#fd381d]">Contact</a></li>
                         </ul>
                     </div>
-    
+
                     <!-- Contact -->
                     <div>
                         <h5 class="text-lg font-semibold text-gray-800">Hubungi Kami</h5>
@@ -230,7 +243,7 @@
                 <p>&copy; 2024 TitipMudah. Powered by Layanan TitipMudah.</p>
             </div>
         </footer>
-    </div>    
+    </div>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
@@ -240,31 +253,37 @@
     <!-- form whatsapp -->
     <script>
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-           e.preventDefault();
-       
-           // Ambil nilai dari input form
-           var name = document.getElementById('name').value;
-           var phone = document.getElementById('phone').value;
-           var address = document.getElementById('address').value;
-           var message = document.getElementById('message').value;
-       
-           // Format pesan untuk WhatsApp dengan tampilan yang rapi
-           var whatsappMessage = `*Formulir Pesanan*\n\n` +
-                                 `*Nama*: \n ${name}\n\n` +
-                                 `*No Handphone*: \n ${phone}\n\n` +
-                                 `*Alamat*: \n ${address}\n\n` +
-                                 `*Nama Makanan*: \n${message}\n\n` +
-                                 `*Terima kasih!*`;
-       
-           // Nomor WhatsApp tujuan (nomor kamu: +6285729060090)
-           var whatsappNumber = '6285729060090'; // Tanpa tanda '+' 
-       
-           // Buat URL WhatsApp
-           var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-       
-           // Buka URL di tab baru dengan pesan otomatis diisi
-           window.open(whatsappURL, '_blank');
-       });
-       </script>
+            e.preventDefault();
+
+            // Ambil nilai dari input form
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var address = document.getElementById('address').value;
+            var quantity = document.getElementById('quantity').value;
+
+            // Ambil nilai dari dropdown produk yang dipilih
+            var productSelect = document.getElementById('product');
+            var selectedProducts = Array.from(productSelect.selectedOptions).map(option => option.text).join(', ');
+
+            // Format pesan untuk WhatsApp dengan tampilan yang rapi
+            var whatsappMessage = `*Formulir Pesanan*\n\n` +
+                `*Nama*: \n${name}\n\n` +
+                `*No Handphone*: \n${phone}\n\n` +
+                `*Alamat*: \n${address}\n\n` +
+                `*Nama Barang Pesanan*: \n${selectedProducts}\n\n` +
+                `*Jumlah Pesanan*: \n${quantity}\n\n` +
+                `*Terima kasih!*`;
+
+            // Nomor WhatsApp tujuan (nomor kamu: +6285729060090)
+            var whatsappNumber = '6285729060090'; // Tanpa tanda '+' 
+
+            // Buat URL WhatsApp
+            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Buka URL di tab baru dengan pesan otomatis diisi
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
 </body>
+
 </html>

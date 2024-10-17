@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Daftar Barang</title>
 </head>
+
 <body class="bg-gray-100">
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50">
@@ -25,10 +27,9 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Services</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">About</a>
-                    <a href="index.html" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
+                    <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
+                    <a href="#services" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Product</a>
+                    <a href="#contact" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300"><span aria-hidden="true"></span></a>
@@ -54,10 +55,9 @@
                     <div class="mt-6 flow-root">
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="space-y-2 py-6">
-                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Home</a>
-                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Services</a>
-                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">About</a>
-                                <a href="index.html" class="-mx-3 block rounded-lg border border-gray-500 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300 hover:border-[#0d2546] transition-all">Contact</a>
+                                <a href="#" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Home</a>
+                                <a href="#services" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Product</a>
+                                <a href="#contact" class="text-sm font-bold leading-6 text-gray-900 hover:text-[#fd381d] transition-colors duration-300">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         <p class="text-gray-600 mt-2">Rp 800.000</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
                     <img src="img/rolex.jpg" alt="Buzzers" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -122,7 +122,7 @@
                         <p class="text-gray-600 mt-2">Rp 1.500.000</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/barca.jpg" alt="Alarm Systems" class="w-full h-64 object-contain">
                     <div class="p-6">
@@ -130,14 +130,14 @@
                         <p class="text-gray-600 mt-2">Rp 1.500.000</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
                     <img src="img/psg.jpg" alt="Buzzers" class="w-full h-64 object-contain">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-800">Jersey PSG</h3>
                         <p class="text-gray-600 mt-2">Rp 1.500.000</p>
                     </div>
-                </div>         
+                </div>
             </div>
         </section>
 
@@ -149,7 +149,7 @@
                 <div class="w-full md:w-1/2 p-4" data-aos="fade-right" data-aos-duration="1000">
                     <img src="img/logopng.png" alt="Logo" class="max-w-xs mx-auto">
                 </div>
-                
+
 
                 <!-- Contact Form -->
                 <div class="w-full md:w-1/2 p-4" data-aos="fade-left" data-aos-duration="1000">
@@ -167,10 +167,22 @@
                             <input type="text" id="address" name="address" placeholder="Alamat anda" class="w-full p-2 border rounded-md" required>
                         </div>
                         <div class="mb-4">
-                            <label for="message" class="block text-left">Nama Barang Pesanan</label>
-                            <textarea id="message" name="message" placeholder="Kirim detail pesanan anda disini.." class="w-full p-2 border rounded-md" required></textarea>
+                            <label for="product" class="block text-left mb-2">Nama Barang</label>
+                            <select id="product" name="product" class="w-full p-2 border border-gray-300 rounded-md" required>
+                                <option value="">Pilih barang...</option>
+                                <option value="ayam_geprek">Jersey Home Liverpool</option>
+                                <option value="mie_gacoan">Parfum Ferarri</option>
+                                <option value="hotways_nashville">Rolex</option>
+                                <option value="rock_burger">Jersey Home Real Madrid</option>
+                                <option value="seblak">Jersey Home Barcelona</option>
+                                <option value="takoyaki">Jersey PSG</option>
+                            </select>
                         </div>
-                        <button type="submit" class="bg-[#fd381d] text-white px-6 py-3 rounded-md hover:bg-red-600">KIRIM PESAN</button>
+                        <div class="mb-4">
+                            <label for="quantity" class="block text-left">Jumlah Pesanan</label>
+                            <input type="number" id="quantity" name="quantity" placeholder="Jumlah pesanan" class="w-full p-2 border rounded-md" min="1" required>
+                        </div>
+                        <button type="submit" id="sendMessage" class="bg-[#fd381d] text-white px-6 py-3 rounded-md hover:bg-red-600">KIRIM PESAN</button>
                     </form>
                 </div>
             </div>
@@ -197,7 +209,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <!-- Menu -->
                     <div>
                         <h5 class="text-lg font-semibold text-gray-800">Menu</h5>
@@ -208,7 +220,7 @@
                             <li><a href="#contact" class="text-gray-600 hover:text-[#fd381d]">Contact</a></li>
                         </ul>
                     </div>
-    
+
                     <!-- Contact -->
                     <div>
                         <h5 class="text-lg font-semibold text-gray-800">Hubungi Kami</h5>
@@ -225,41 +237,52 @@
                 <p>&copy; 2024 TitipMudah. Powered by Layanan TitipMudah.</p>
             </div>
         </footer>
-    </div>    
+    </div>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         AOS.init(); // Inisialisasi AOS
     </script>
-    
+
     <!-- form whatsapp -->
     <script>
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-           e.preventDefault();
-       
-           // Ambil nilai dari input form
-           var name = document.getElementById('name').value;
-           var phone = document.getElementById('phone').value;
-           var address = document.getElementById('address').value;
-           var message = document.getElementById('message').value;
-       
-           // Format pesan untuk WhatsApp dengan tampilan yang rapi
-           var whatsappMessage = `*Formulir Pesanan*\n\n` +
-                                 `*Nama*: \n ${name}\n\n` +
-                                 `*No Handphone*: \n ${phone}\n\n` +
-                                 `*Alamat*: \n ${address}\n\n` +
-                                 `*Nama Barang Pesanan*: \n${message}\n\n` +
-                                 `*Terima kasih!*`;
-       
-           // Nomor WhatsApp tujuan (nomor kamu: +6285729060090)
-           var whatsappNumber = '6285729060090'; // Tanpa tanda '+' 
-       
-           // Buat URL WhatsApp
-           var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-       
-           // Buka URL di tab baru dengan pesan otomatis diisi
-           window.open(whatsappURL, '_blank');
-       });
-       </script>
+            e.preventDefault();
+
+            // Ambil nilai dari input form
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var address = document.getElementById('address').value;
+
+            // Ambil nilai dari input jumlah pesanan
+            var quantity = document.getElementById('quantity').value;
+
+            // Ambil nilai dari dropdown produk yang dipilih
+            var productSelect = document.getElementById('product');
+            var selectedProducts = Array.from(productSelect.selectedOptions).map(option => {
+                // Menggunakan teks dari option untuk output
+                return option.text;
+            }).join(', ');
+
+            // Format pesan untuk WhatsApp dengan tampilan yang rapi
+            var whatsappMessage = `*Formulir Pesanan*\n\n` +
+                `*Nama*: \n${name}\n\n` +
+                `*No Handphone*: \n${phone}\n\n` +
+                `*Alamat*: \n${address}\n\n` +
+                `*Jumlah Pesanan*: \n${quantity}\n\n` +
+                `*Nama Barang Pesanan*: \n${selectedProducts}\n\n` +
+                `*Terima kasih!*`;
+
+            // Nomor WhatsApp tujuan (nomor kamu: +6285729060090)
+            var whatsappNumber = '6285729060090'; // Tanpa tanda '+' 
+
+            // Buat URL WhatsApp
+            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Buka URL di tab baru dengan pesan otomatis diisi
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
 </body>
+
 </html>
